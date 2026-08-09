@@ -57,7 +57,7 @@
     font-size:16.5px;line-height:1.85;-webkit-font-smoothing:antialiased;
     overflow-x:hidden;
   }
-  h1,h2,h3{font-family:var(--font-display);font-weight:400;text-wrap:balance;color:var(--ink);margin:0;}
+  h1,h2,h3{font-family:var(--font-display);font-weight:400;text-wrap:balance;word-break:keep-all;overflow-wrap:break-word;color:var(--ink);margin:0;}
   a{color:inherit;}
   img,svg{max-width:100%;display:block;}
   .wrap{max-width:1120px;margin:0 auto;padding:0 24px;}
@@ -108,7 +108,7 @@
   .hero{padding:clamp(56px,9vw,96px) 24px clamp(40px,6vw,64px);}
   .hero-inner{max-width:1120px;margin:0 auto;}
   .hero-eyebrow{font-family:var(--font-label);font-size:0.82rem;letter-spacing:0.1em;color:var(--brand);font-weight:700;margin-bottom:18px;}
-  .hero h1{font-size:clamp(2.05rem,4.6vw,3.4rem);line-height:1.35;max-width:15ch;margin-bottom:22px;}
+  .hero h1{font-size:clamp(2.05rem,4.6vw,3.4rem);line-height:1.35;max-width:19em;margin-bottom:22px;}
   .hero h1 em{font-style:normal;color:var(--brand);}
   .hero p.lede{font-size:1.1rem;color:var(--ink-soft);max-width:46ch;margin-bottom:34px;}
   .hero-ctas{display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin-bottom:44px;}
@@ -262,7 +262,7 @@
     background:linear-gradient(180deg,var(--brand-deep),var(--brand));
     color:#fff;padding:clamp(64px,9vw,108px) 24px;text-align:center;
   }
-  .final h2{color:#fff;font-size:clamp(1.7rem,3.6vw,2.5rem);max-width:20ch;margin:0 auto 18px;}
+  .final h2{color:#fff;font-size:clamp(1.7rem,3.6vw,2.5rem);max-width:19em;margin:0 auto 18px;}
   .final p{color:rgba(255,255,255,0.85);max-width:46ch;margin:0 auto 34px;}
   .final .btn-primary{background:#fff;color:var(--brand-deep);box-shadow:0 14px 30px -14px rgba(0,0,0,0.35);}
   .final .hero-note{color:rgba(255,255,255,0.7);}
@@ -344,7 +344,7 @@
 <section class="hero" id="top">
   <div class="hero-inner">
     <div class="hero-eyebrow">TOEIC 600〜800点。なのに、口が開かない。</div>
-    <h1>スコアはもう十分。足りないのは、<em>話す回路</em>です。</h1>
+    <h1>スコアはもう十分。<wbr>足りないのは、<wbr><em>話す回路</em>です。</h1>
     <p class="lede">
       TalkBridgeは、非ネイティブ講師が設計する実務英語スクール。文法でも単語量でもなく、
       「詰まった瞬間にどう切り抜けるか」を型として教えます。無料体験レッスン1回で、その手応えを確かめてください。
